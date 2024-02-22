@@ -1,0 +1,4 @@
+- Update "/tool/homework/index.html" with tomorrow's homework
+- Read emails and update specified parts with the answer
+- Do homework
+- Log the homework you made
