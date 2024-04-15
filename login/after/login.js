@@ -30,9 +30,9 @@ fetch("https://auth.empties.it/login/2893/id.txt")
         if (users.indexOf(u) > -1 && passwords[users.indexOf(u)] == p) {
             console.log("logged in")
         } else {
-            window.location.href = "/login/baduser"
+            window.location.href = "https://auth.empties.it/login/2893"
         }
     } else {
-        window.location.href = "/login/badid"
+        window.location.href = "https://auth.empties.it/login/2893"
     }
 });
