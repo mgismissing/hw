@@ -3,7 +3,7 @@ const users = [
 ]
 
 const passwords = [
-    "2010$erver!!"
+    "2010%24erver%21%21"
 ]
 
 
@@ -17,10 +17,14 @@ fetch("https://auth.empties.it/login/2893/id.txt")
   .then(text => {
     console.log(id);
     console.log(text);
+    console.log(u);
+    console.log(p);
     if (id == text) {
-        console.log("id check passed")
         if (users.indexOf(u) > -1 && passwords[users.indexOf(u)] == p) {
-            console.log("login successful")
+        } else {
+            window.location.href = "/login/baduser"
         }
+    } else {
+        window.location.href = "/login/badid"
     }
 });
