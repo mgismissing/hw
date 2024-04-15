@@ -6,9 +6,11 @@ const passwords = [
     "2010$erver!!"
 ]
 
+
 const u = /u=([^&#=]*)/.exec(window.location.search)[1];
 const p = /p=([^&#=]*)/.exec(window.location.search)[1];
 const id = /id=([^&#=]*)/.exec(window.location.search)[1];
+
 
 fetch("https://auth.empties.it/login/2893/id.txt")
   .then(response => response.text())
