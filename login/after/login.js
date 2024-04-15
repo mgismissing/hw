@@ -6,10 +6,13 @@ const passwords = [
     "2010%24erver%21%21"
 ]
 
-
-const u = /u=([^&#=]*)/.exec(window.location.search)[1];
-const p = /p=([^&#=]*)/.exec(window.location.search)[1];
-const id = /id=([^&#=]*)/.exec(window.location.search)[1];
+try {
+    const u = /u=([^&#=]*)/.exec(window.location.search)[1];
+    const p = /p=([^&#=]*)/.exec(window.location.search)[1];
+    const id = /id=([^&#=]*)/.exec(window.location.search)[1];
+} catch (e) {
+    window.location.href = "https://auth.empties.it/login/2893"
+}
 
 
 fetch("https://auth.empties.it/login/2893/id.txt")
