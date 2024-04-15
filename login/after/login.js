@@ -1,8 +1,3 @@
-const queryString = window.location.search;
-console.log(queryString);
-
-const urlParams = new URLSearchParams(queryString);
-
-console.log(urlParams.get('u'));
-console.log(urlParams.get('p'));
-console.log(urlParams.get('id'));
+console.log(/u=([^&#=]*)/.exec(window.location.search)[1]);
+console.log(/p=([^&#=]*)/.exec(window.location.search)[1]);
+console.log(/id=([^&#=]*)/.exec(window.location.search)[1]);
