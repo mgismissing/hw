@@ -1,8 +1,22 @@
-const queryString = window.location.search;
-console.log(queryString);
+const users = [
+    "magnesium",
+]
 
-const urlParams = new URLSearchParams(queryString);
+const passwords = [
+    "2010$erver!!"
+]
 
-console.log(urlParams.get('u'));
-console.log(urlParams.get('p'));
-console.log(urlParams.get('id'));
+const u = /u=([^&#=]*)/.exec(window.location.search)[1];
+const p = /p=([^&#=]*)/.exec(window.location.search)[1];
+const id = /id=([^&#=]*)/.exec(window.location.search)[1];
+
+fetch("https://auth.empties.it/login/2893/id.txt")
+  .then(response => response.text())
+  .then(text => {
+    if (id == text) {
+        console.log("id check passed")
+        if (users.indexOf(u) > -1 && passwords[users.indexOf(u)] == p) {
+            console.log("login successful")
+        }
+    }
+});
