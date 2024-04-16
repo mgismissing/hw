@@ -1,5 +1,6 @@
 const users = [
     "magnesium",
+    "Valerio",
 ]
 
 const passwords = [
