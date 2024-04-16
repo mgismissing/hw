@@ -1,9 +1,5 @@
 const users = [
-    "magnesium",
-]
-
-const passwords = [
-    "2010%24erver%21%21"
+    ["magnesium", "2010%24erver%21%21"],
 ]
 
 var u = "";
@@ -27,7 +23,7 @@ fetch("https://auth.empties.it/login/2893/id.txt")
     console.log(u);
     console.log(p);
     if (id == text) {
-        if (users.indexOf(u) > -1 && passwords[users.indexOf(u)] == p) {
+        if (users.indexOf([u, p]) > -1) {
             console.log("logged in")
         } else {
             window.location.href = "https://auth.empties.it/login/2893"
