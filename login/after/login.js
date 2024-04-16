@@ -1,6 +1,6 @@
 const users = [
-    "magnesium",
-    "Valerio",
+    "magnesium", //owner
+    "Valerio", //owner_h
 ]
 
 const passwords = [
