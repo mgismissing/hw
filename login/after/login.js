@@ -1,11 +1,13 @@
 const users = [
     "magnesium", //owner
     "Valerio", //owner_h
+    "Mousse_lini" //provagratis-7g
 ]
 
 const passwords = [
     "2010%24erver%21%21",
     "orsacchiottoily",
+    "Giginobambino123",
 ]
 
 var u = "";
